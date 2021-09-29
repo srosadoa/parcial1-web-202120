@@ -8,9 +8,6 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', router);
-app.use('/', (req, resp) => {
-  resp.sendFile(__dirname + 'public/index.html');
-});
 
 app.listen(port, () => {
   console.log('Server on http://localhost:3000');

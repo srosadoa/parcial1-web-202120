@@ -1,11 +1,10 @@
 {
-  "name": "test-macheight",
+  "name": "parcial-1-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "Parcial web",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "jest"
+    "start": "nodemon server.js"
   },
   "author": "Jhonatan A",
   "license": "ISC",

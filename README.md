@@ -1,32 +1,23 @@
 # NBA Players
 
-### Setup 🔧
+### Configuración inicial 🔧
 
-1. Clone repository
+1. Clonar repositorio
 
    ```bash
    git clone https://github.com/jhonatan89/
    ```
 
-2. Install npm modules
+2. Instalar npm modules
    ```bash
    npm install
    ```
-3. Launch server
+3. Ejecutar servidor
    ```bash
    npm run start
    ```
-4. If everything goes well you should see **Server on http://localhost:3000** in the terminal.
+4. Ir a **http://localhost:3000** para ver la pantalla inicial
 
-### Test application
+## Documentación endpoint
 
-1. Execute test
-   ```bash
-   npm run test
-   ```
-
-### UI
-
-1. Go to **http://localhost:3000**
-2. Introduce a number in input field. (Only numbers) and click submit.
-3. See results
+Agregue aquí al documentación del endpoint elaborado.
