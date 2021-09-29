@@ -2,21 +2,19 @@
 
 ### Configuración inicial 🔧
 
-1. Clonar repositorio
+1. Realizar el fork del repositorio
 
-   ```bash
-   git clone https://github.com/jhonatan89/
-   ```
+2. Clonar el repositorio
 
-2. Instalar npm modules
+3. Instalar npm modules
    ```bash
    npm install
    ```
-3. Ejecutar servidor
+4. Ejecutar servidor
    ```bash
    npm run start
    ```
-4. Ir a **http://localhost:3000** para ver la pantalla inicial
+5. Ir a **http://localhost:3000** para ver la pantalla inicial
 
 ## Documentación endpoint
 
