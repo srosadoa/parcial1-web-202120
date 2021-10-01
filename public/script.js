@@ -7,6 +7,9 @@ const table = document.getElementById('table');
 const tbody = document.getElementById('body-table');
 const message = document.getElementById('message');
 
+var playerSize;
+var playerNumb;
+
 enterButton.addEventListener('click', (event) => {
   //Implementar lógica del button submit
   alert('Implementar lógica del button submit');
@@ -14,11 +17,7 @@ enterButton.addEventListener('click', (event) => {
   event.preventDefault();
 });
 
-fetch(
-  "https://gist.githubusercontent.com/jhonatan89/bc554ec3ded15407609714e8b7b8f1c8/raw/5ab1e3e5b45e99aabcbbdd30f55d2ae5eafb9cbe/nba-players"
-).then((response) => response.json()).then((data) => {
 
-});
 /**
  * Llamado al backend con queryParam
  * @param {*} heightRef
@@ -35,3 +34,9 @@ function removeAllChildNodes(parent) {
     parent.removeChild(parent.firstChild);
   }
 }
+
+fetch(
+  "https://gist.githubusercontent.com/jhonatan89/bc554ec3ded15407609714e8b7b8f1c8/raw/5ab1e3e5b45e99aabcbbdd30f55d2ae5eafb9cbe/nba-players"
+).then((response) => response.json()).then((data) => {
+
+});
