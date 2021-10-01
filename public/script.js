@@ -15,6 +15,7 @@ var nombre1 = " ";
 var apellido1 = " ";
 var nombre2 = " ";
 var apellido2 = " ";
+var textoNoFound =" ";
 
 
 enterButton.addEventListener('click', (event) => {
@@ -50,15 +51,15 @@ fetch(
 
 });
 
-function calculoEstaturas (playerName, playerSurname,playerSizeIn, inputText){
+function calculoEstaturas(playerName, playerSurname, playerSizeIn, inputText) {
   var estatura = parseInt(inputText);
   var duplaEncontrada = false;
   for (let i = 0; i < playerSizeIn.length; i++) {
     const jugador1 = playerSizeIn[i];
     let j = 1;
-    while (j< playerSizeIn.length) {
+    while (j < playerSizeIn.length) {
       const jugador2 = playerSizeIn[j];
-      if (jugador1+jugador2 === estatura && duplaEncontrada) {
+      if ((jugador1 + jugador2 === estatura) && duplaEncontrada) {
         nombre1 = playerName[i];
         apellido1 = playerSurname[i];
         nombre2 = playerName[j];
@@ -69,8 +70,9 @@ function calculoEstaturas (playerName, playerSurname,playerSizeIn, inputText){
     }
   }
   if (duplaEncontrada = false) {
+    textoNoFound = "No matches found";
   }
 }
-function mostrarResultados(){
-  
+function mostrarResultados() {
+
 }
