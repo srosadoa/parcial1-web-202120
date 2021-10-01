@@ -1,3 +1,5 @@
+const { response } = require("express");
+
 const enterButton = document.getElementById('enter');
 const input = document.getElementById('inputText');
 const tableSection = document.getElementById('table-section');
@@ -12,6 +14,11 @@ enterButton.addEventListener('click', (event) => {
   event.preventDefault();
 });
 
+fetch(
+  "https://gist.githubusercontent.com/jhonatan89/bc554ec3ded15407609714e8b7b8f1c8/raw/5ab1e3e5b45e99aabcbbdd30f55d2ae5eafb9cbe/nba-players"
+).then((response) => response.json()).then((data) => {
+
+});
 /**
  * Llamado al backend con queryParam
  * @param {*} heightRef
