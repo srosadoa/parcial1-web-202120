@@ -73,6 +73,7 @@ function calculoEstaturas(playerName, playerSurname, playerSizeIn, inputText) {
     textoNoFound = "No matches found";
   }
 }
-function mostrarResultados() {
+function mostrarResultados() { //Una vez hemos calculado los jugadores que cumplen los requisitos de estatura
+                        //hacemos un display de los mismos
 
 }
