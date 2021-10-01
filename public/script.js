@@ -11,6 +11,10 @@ var playerSizeIn;
 var playerName;
 var playerSurname;
 var playerSizeMt;
+var nombre1 = " ";
+var apellido1 = " ";
+var nombre2 = " ";
+var apellido2 = " ";
 
 
 enterButton.addEventListener('click', (event) => {
@@ -39,8 +43,34 @@ function removeAllChildNodes(parent) {
 fetch(
   "https://gist.githubusercontent.com/jhonatan89/bc554ec3ded15407609714e8b7b8f1c8/raw/5ab1e3e5b45e99aabcbbdd30f55d2ae5eafb9cbe/nba-players"
 ).then((response) => response.json()).then((data) => {
-  playerName = data[0];
-  playerSizeMt = data[1];
-  playerSizeIn = data[2];
-  playerSurname = data[3];
+  playerName = data[0].values;
+  playerSizeMt = data[1].values;
+  playerSizeIn = data[2].values;
+  playerSurname = data[3].values;
+
 });
+
+function calculoEstaturas (playerName, playerSurname,playerSizeIn, inputText){
+  var estatura = parseInt(inputText);
+  var duplaEncontrada = false;
+  for (let i = 0; i < playerSizeIn.length; i++) {
+    const jugador1 = playerSizeIn[i];
+    let j = 1;
+    while (j< playerSizeIn.length) {
+      const jugador2 = playerSizeIn[j];
+      if (jugador1+jugador2 === estatura && duplaEncontrada) {
+        nombre1 = playerName[i];
+        apellido1 = playerSurname[i];
+        nombre2 = playerName[j];
+        apellido2 = playerSurname[j];
+        duplaEncontrada = true;
+      }
+      j++;
+    }
+  }
+  if (duplaEncontrada = false) {
+  }
+}
+function mostrarResultados(){
+  
+}
